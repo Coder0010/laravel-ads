@@ -28,6 +28,13 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MKamelMasoud\\Ads\\Providers\\PackageServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
