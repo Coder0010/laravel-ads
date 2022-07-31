@@ -18,14 +18,14 @@ class AdResource extends JsonResource
         return [
             "id"          => $this->id,
             "name"        => $this->name,
-//            "description" => $this->description,
-//            "advertiser"  => optional($this->advertiser) ? [
-//                "name"  => $this->advertiser->name,
-//                "email" => $this->advertiser->email,
-//            ] : new Collection(),
+            "description" => $this->description,
+            "advertiser"  => optional($this->advertiser) ? [
+                "name"  => $this->advertiser->name,
+                "email" => $this->advertiser->email,
+            ] : new Collection(),
             "category"    => new SimpleResource($this->whenLoaded('category')),
             "tags"        => SimpleResource::collection($this->whenLoaded('tags')),
-//            "start_date"  => $this->start_date,
+            "start_date"  => $this->start_date,
         ];
     }
 }
