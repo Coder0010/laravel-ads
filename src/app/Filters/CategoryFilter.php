@@ -1,6 +1,6 @@
 <?php
 
-namespace MKamelMasoud\Ads\Http\Filters;
+namespace MKamelMasoud\Ads\Filters;
 
 use Closure;
 

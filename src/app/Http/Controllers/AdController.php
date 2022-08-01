@@ -6,9 +6,9 @@ use App\Http\Controllers\Controller;
 use DB;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Pipeline\Pipeline;
-use MKamelMasoud\Ads\Http\Filters\CategoryFilter;
-use MKamelMasoud\Ads\Http\Filters\NameFilter;
-use MKamelMasoud\Ads\Http\Filters\TagFilter;
+use MKamelMasoud\Ads\Filters\CategoryFilter;
+use MKamelMasoud\Ads\Filters\NameFilter;
+use MKamelMasoud\Ads\Filters\TagFilter;
 use MKamelMasoud\Ads\Http\Resources\AdResource;
 use MKamelMasoud\Ads\Models\Ad;
 
